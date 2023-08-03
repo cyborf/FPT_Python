@@ -237,10 +237,10 @@ class AuthService():
     def __init__(self, handler):
         self.handler = handler
     
-    def authenticate(num, cvv):
+    def authenticate(self, num, cvv):
         if self.handler.handle(num, cvv):
-            return true
-        return false
+            return True
+        return False
 
 def CreditMain():
     database = {}
